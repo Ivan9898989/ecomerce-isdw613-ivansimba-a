@@ -1,2 +1,167 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <style>
+        #mititulo{
+            color: #ff0000;
+            font-size: 2em;
+            /*16 px * 1.5 = 24px*/
+            /*color:blue*/
+            /*color: rgb(0,0,255)*/
+            text-align: center;
+            vertical-align: text-bottom;
+            /*text-align: justify;*/
+            font-style: italic;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0.5px 0px #000000 ;
+            background-color: #00ff00;
+            /*border-color: #000000;
+            border-style: solid;
+            border-width: 1px;*/
+            /*border-left: 5px #000000 solid;
+            padding-left: 10px;
+            padding-bottom: 20px;*/
+            padding: 10px;
+            margin: 80px;
+            /*border: 1px solid #000000;*/
+            outline-style: solid;
+            outline-color: #000000;
+            outline-width: 10px;
+            outline-offset: 2px;
+            
+            
+
+        }
+        .mitexto{
+            font-size: 0.9em;
+            text-align: justify;
+            text-decoration: underline;
+            text-indent: 20px;
+            line-height: 1.5;
+        }
+
+        table, td,th, tr{
+            border: 1px solid #000000;
+            width: 100%;
+            
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th{
+            height: 50px;
+            text-align: left;
+            vertical-align: bottom;
+            background-color: black;
+            color: white;
+            
+        }
+
+        td{
+            /*padding-left: 10px;
+            padding-right: 20px;*/
+            padding: 15px;        
+        }
+
+        a:hover{
+            color: #c14949;
+        }
+
+        a:visited{
+            color: #4ec418;
+        }
+
+        td:hover{
+            background-color: #12e131;
+            
+        }
+
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+
+        tr:nth-child(odd){
+            background-color: #95b2df;
+        }
+
+
+        a:link{
+            color: #053399;
+        }
+
+        span:first-child{
+            font-size: 2em;
+        }
+
+        p::first-letter{
+            font-size: 20px;
+        }
+
+        p::first-line{
+            color:#053399
+        }
+
+        .micombinador>p{     
+            background-color: #ff0000;
+        }
+
+        a[target="_blank"]{
+            background-color:yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <p  id="mititulo">Acerca de</p>
+    <p class="mitexto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique libero non velit sed veritatis eligendi. Cumque veniam ut vel odio nostrum! Architecto, dolor voluptatibus saepe labore pariatur voluptates recusandae nisi?
+    </p>
+
+    <div >
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Telefono</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>juan@epn.com</td>
+                <td>0987654321</td>
+            </tr>
+            <tr>
+                <td>Miguel</td>
+                <td>miguel@epn.com</td>
+                <td>0987654321</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>carlos.com</td>
+                <td>0987654321</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>carlos.com</td>
+                <td>0987654321</td>
+            </tr>     
+        </table>
+    </div>
+    
+    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_self">Mis otros productos</a>
+    <br/>
+    
+    <div class="micombinador">
+        <p>Texto dentro de mi combinador</p>
+        <h1>Mi cabecera</h1>
+    </div>
+
+</body>
 </html>

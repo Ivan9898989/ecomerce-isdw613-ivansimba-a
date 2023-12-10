@@ -8,5 +8,12 @@ p {
 .cell-header {
     background-color: burlywood;
     border: 1px solid black;
-    font-weight: 100;
+    font-weight: bold;
+    text-align: center; 
+}
+
+
+#productDetail{
+    border: 1px solid black;
+    color: yellow;
 }

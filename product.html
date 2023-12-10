@@ -6,6 +6,18 @@
             color: red;
             font-size: 50px;
             text-align: center;
+            font-style: italic;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #imgProduct {
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            
         }
     
 
@@ -13,10 +25,10 @@
 </head>
 
 <body>
-    <h1>PlayStation 5</h1>
+    <h1 id="productName">PlayStation 5</h1>
     <link rel="stylesheet" href="assets\images\styles\styles.css">
-    
-    <img src="assets/images/console3.jpg" width="600px"/>
+    <h2 id="productDetail">Detalles:</h2>
+    <img id="imgProduct" src="assets/images/console3.jpg" width="600px"/>
     
     <p style="font-size: 12px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nisl ut libero lobortis pretium. Suspendisse congue pellentesque mi, non placerat nunc semper quis. Ut ultrices nulla magna, a feugiat justo posuere ut. Fusce congue ornare ante, non lacinia eros. Curabitur ex lacus, semper sit amet efficitur id, faucibus quis elit. Praesent id leo risus. Pellentesque justo nisl, lacinia vitae lorem sed, venenatis finibus quam. Duis elementum sed enim at vestibulum. In eu feugiat velit. Ut at tristique nisi.
         Vivamus ornare ligula dui, ut auctor quam mattis non. Curabitur sem ligula, condimentum sit amet viverra eget, tristique vel leo. Mauris ex turpis, consequat id urna a, gravida tincidunt metus. Aenean ultricies suscipit leo vel porttitor. Vivamus odio augue, tempus ac magna convallis, consectetur molestie magna. Donec nec venenatis nulla. Proin ornare tincidunt leo sit amet placerat.
@@ -29,23 +41,23 @@
     <h2>Ficha T&eacute;cnica</h2>
     <table>
         <tr>
-            <td class="miclase">Marca</td>
+            <td class="cell-header">Marca</td>
             <td>Sony</td>
         </tr>
         <tr>
-            <td class="miclase">Modelo</td>
+            <td class="cell-header">Modelo</td>
             <td>PlayStation 5</td>
         </tr>
         <tr>
-            <td class="miclase">Memoria RAM</td>
+            <td class="cell-header">Memoria RAM</td>
             <td>16GB</td> 
         </tr>
         <tr>
-            <td class="miclase">Procesador</td>
+            <td class="cell-header">Procesador</td>
             <td>Intel Core i5</td>
         </tr>
         <tr>
-            <td class="miclase">Condici&oacute;n</td>
+            <td class="cell-header">Condici&oacute;n</td>
             <td>Reparado = Buen Estado</td>
         </tr>
     </table>
