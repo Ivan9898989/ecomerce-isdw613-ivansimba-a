@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html >
+<html lang="es" data-bs-theme="dark">
     <head>
         <title>Bienvenido a Mi E-Commerce</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -11,11 +11,33 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
+
+        <style>
+            .border-column{
+                border-right: 2px black solid;
+            }
+
+            .details{
+                background-color: rgb(106, 23, 23);
+            }
+
+            .container-header{
+                background-color: rgb(106, 23, 23);
+            }
+
+            .comtenedor.hija{
+                font-size: 30px;
+            }
+
+            nav ul li a {
+                font-size: 30px;
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Mi Ecommerce</a>
+                <a class="navbar-brand" href="#" sourceMappingURL=mytaller.css.map>Mi Ecommerce</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -53,7 +75,15 @@
                     </form>
                 </div>
             </div>
-        </nav>           
+        </nav>    
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Productos</a>
+                </li>
+            </ul>
+        </nav>
     <!--    
     <ul>
             <li>Home</li>
@@ -69,16 +99,14 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="product.html">Productos</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Detalle de Productos</li>
             </ol>
         </nav>
 
         <div class="content">
-            <div class="row">
+            <div class="row gx-5">
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/images/console3.jpg" class="card-img-top" alt="PlayStation 5">
+                        <img src="assets/images/console3.jpg" class="card-img-top img-fluid" alt="PlayStation 5">
                         <div class="card-body">
                             <h5 class="card-title">PlayStation 5</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem?</p>
@@ -91,7 +119,7 @@
                             </div>
                             <a href="#PlayStation5moreinfo" data-bs-toggle="collapse" class="btn btn-secondary">Mas
                                 Informaci&oacute;n</a>
-                            <a href="#" class="btn btn-primary">Detalles</a>
+                            <a href="product.html" class="btn btn-primary">Detalles</a>
                         </div>
                     </div>
     
@@ -101,7 +129,7 @@
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/images/console1.jpg" class="card-img-top" alt="PlayStation 3">
+                        <img src="assets/images/console1.jpg" class="card-img-top img-fluid" alt="PlayStation 3">
                         <div class="card-body">
                             <h5 class="card-title">PlayStation 3</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem?</p>
@@ -111,7 +139,7 @@
                 </div>
                 <div class="col">
                     <div class="card" style="width: 18rem;">
-                        <img src="assets/images/console2.png" class="card-img-top" alt="Nintendo Switch">
+                        <img src="assets/images/console2.png" class="card-img-top img-fluid" alt="Nintendo Switch">
                         <div class="card-body">
                             <h5 class="card-title">Nintendo Switch</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, rem?</p>
@@ -121,9 +149,52 @@
                 </div>
             </div>
         </div>
-    
+
+        <table class="table table-striped table-hover table-bordered table-s,">
+            <thead>
+                <tr class="table-primary">
+                    <th class="border-column">#</th>
+                    <th>Primer nombre</th>
+                    <th>Segundo nombre</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td class="border-column">1</td>
+                    <td>Miguel</td>
+                    <td>Dario</td>
+                    <td>32</td>
+                </tr>
+                <tr >
+                    <td class="border-column">1</td>
+                    <td>Miguel</td>
+                    <td>Dario</td>
+                    <td class="table-active">32</td>
+                </tr>
+                <tr>
+                    <td class="border-column">1</td>
+                    <td>Miguel</td>
+                    <td>Dario</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td class="border-column">1</td>
+                    <td>Miguel</td>
+                    <td>Dario</td>
+                    <td>32</td>
+                </tr>
+            </tbody>
+        </table>
+         
+        <div class="row">
+            <div class="col">
+                <img src="assets/images/console3.jpg" class="img-fluid">
+            </div>
+        </div>
+
         <nav aria-label="Page navigation example">
-            <ul class="pagination">
+            <ul class="pagination justify-content-center">
                 <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>

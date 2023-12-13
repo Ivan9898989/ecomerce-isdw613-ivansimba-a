@@ -1,65 +1,105 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PlayStation 5</title>
-    <style>
-        h1 {
-            color: red;
-            font-size: 50px;
-            text-align: center;
-            font-style: italic;
-            font-family: sans-serif;
-            font-weight: bold;
-        }
-
-        #imgProduct {
-            
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            
-        }
-    
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/images/styles/styles.css">
 </head>
-
 <body>
-    <h1 id="productName">PlayStation 5</h1>
-    <link rel="stylesheet" href="assets\images\styles\styles.css">
-    <h2 id="productDetail">Detalles:</h2>
-    <img id="imgProduct" src="assets/images/console3.jpg" width="600px"/>
-    
-    <p style="font-size: 12px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nisl ut libero lobortis pretium. Suspendisse congue pellentesque mi, non placerat nunc semper quis. Ut ultrices nulla magna, a feugiat justo posuere ut. Fusce congue ornare ante, non lacinia eros. Curabitur ex lacus, semper sit amet efficitur id, faucibus quis elit. Praesent id leo risus. Pellentesque justo nisl, lacinia vitae lorem sed, venenatis finibus quam. Duis elementum sed enim at vestibulum. In eu feugiat velit. Ut at tristique nisi.
-        Vivamus ornare ligula dui, ut auctor quam mattis non. Curabitur sem ligula, condimentum sit amet viverra eget, tristique vel leo. Mauris ex turpis, consequat id urna a, gravida tincidunt metus. Aenean ultricies suscipit leo vel porttitor. Vivamus odio augue, tempus ac magna convallis, consectetur molestie magna. Donec nec venenatis nulla. Proin ornare tincidunt leo sit amet placerat.
-    </p>
-    <hr>
-    <p>
-        Precio: $100.000
-    </p>
-    <hr>
-    <h2>Ficha T&eacute;cnica</h2>
-    <table>
-        <tr>
-            <td class="cell-header">Marca</td>
-            <td>Sony</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Modelo</td>
-            <td>PlayStation 5</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Memoria RAM</td>
-            <td>16GB</td> 
-        </tr>
-        <tr>
-            <td class="cell-header">Procesador</td>
-            <td>Intel Core i5</td>
-        </tr>
-        <tr>
-            <td class="cell-header">Condici&oacute;n</td>
-            <td>Reparado = Buen Estado</td>
-        </tr>
-    </table>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" sourceMappingURL=mytaller.css.map>Mi Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Consolas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Retro</a></li>
+                            <li><a class="dropdown-item" href="#">Port&aacute;tiles</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Consolas Modernas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>  
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="product.html">PlayStation 5</a></li>
+        </ol>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">PlayStation 5</h1>
+        <img id="imgProduct" src="assets/images/console3.jpg" class="img-fluid mx-auto d-block" alt="PlayStation 5">
+
+        <div class="container mt-4">
+            <h2>Detalles:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non nisl ut libero lobortis pretium. Suspendisse congue pellentesque mi, non placerat nunc semper quis. Ut ultrices nulla magna, a feugiat justo posuere ut. Fusce congue ornare ante, non lacinia eros. Curabitur ex lacus, semper sit amet efficitur id, faucibus quis elit. Praesent id leo risus. Pellentesque justo nisl, lacinia vitae lorem sed, venenatis finibus quam. Duis elementum sed enim at vestibulum. In eu feugiat velit. Ut at tristique nisi.
+                Vivamus ornare ligula dui, ut auctor quam mattis non. Curabitur sem ligula, condimentum sit amet viverra eget, tristique vel leo. Mauris ex turpis, consequat id urna a, gravida tincidunt metus. Aenean ultricies suscipit leo vel porttitor. Vivamus odio augue, tempus ac magna convallis, consectetur molestie magna. Donec nec venenatis nulla. Proin ornare tincidunt leo sit amet placerat.</p>
+            <hr>
+            <p class="fw-bold">Precio: $100.000</p>
+            <hr>
+            <h2>Ficha Técnica</h2>
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td class="cell-header">Marca</td>
+                    <td>Sony</td>
+                </tr>
+                <tr>
+                    <td class="cell-header">Modelo</td>
+                    <td>PlayStation 5</td>
+                </tr>
+                <tr>
+                    <td class="cell-header">Memoria RAM</td>
+                    <td>16GB</td> 
+                </tr>
+                <tr>
+                    <td class="cell-header">Procesador</td>
+                    <td>Intel Core i5</td>
+                </tr>
+                <tr>
+                    <td class="cell-header">Condici&oacute;n</td>
+                    <td>Reparado = Buen Estado</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
+

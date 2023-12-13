@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.details {
+    background-color: $background;
+    font-size: $myFont;
+    @include important-content(30px);
+}
+ 
+.container-header 
+{
+    background-color: $background;
+    font-size: $myFont;
+}
+
+.botton-base{
+    border: none;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-report{
+    background-color: #4CAF50;
+    @extend .botton-base;
+
+}
+nav{
+    ul{
+        li{
+            a{
+                font-size: 30px;
+            }
+        }
+    }
+}
